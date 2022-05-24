@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible"content="ie=edge">
+        <title>REGISTRATION FORM</title>
+        <style>
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+body {
+    background-image: url(./image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.navLinks ul {
+    display: flex;
+    color: white;
+    list-style: none;
+    margin-top: 10px;
+
+}
+
+
+.links {
+    padding: 0 20px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.links:hover {
+    background-color: white;
+    color: red;
+    border-radius: 20%;
+    transition: 0.5s;
+    padding: 10px 15px;
+}
+
+.myPic {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+        
+        button {
+            background-color: #4caf50;
+            width: 100%;
+            color: white;
+            padding: 15px;
+            margin: 10px 0px;
+            border: none;
+            cursor: pointer;
+        }
+button:hover {
+    color: green;
+    background-color: white;
+    transition: 0.5s;
+}
+
+.regForm {
+    background-color: aquamarine;
+    padding: 40px;
+    margin-bottom: 50px;
+}
+
+form {
+            /* border: 3px solid #f1f1f1; */
+            display: flex;
+            flex-direction: column;
+            padding: 0 400px;
+            margin-top: 20px;
+            position: relative;
+        }
+        input[type=text], input[type=password], input[type=username], input[type=repass], select, button, textarea {
+            width: 100%;
+            margin: 8px 0;
+            padding: 12px 20px;
+            display: inline-block;
+            border: 2px solid green;
+            box-sizing: border-box;
+            height: 60px;
+        }
+
+        h1{
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        .phoneNum {
+            display: flex;
+            flex-direction: row;
+
+        }
+
+        .numInput {
+            padding-left: 10px;
+        }
+
+        label{
+            color: black;
+        }
+
+        select{
+            margin-bottom: 15px;
+        }
+
+
+        button:hover {
+            opacity: 0.7;
+            color: green;
+            background-color: white;
+        }
+        .cancelbtn {
+            width: auto;
+            padding: 10px 18px;
+            margin: 10px 5px;
+        }
+        .container {
+            padding: 25px;
+            background-color: aquamarine;
+        }
+        </style>
+    </head>
+        <body>
+
+            <div class="navBar">
+                <div class="navImage">
+                    <img src="./my image.jpg" class="myPic" alt="">
+                </div>
+                <div class="navLinks">
+                    <ul>
+                        <li><a class="links" href="./index.html">Home</a></li>
+                        <li><a class="links" href="./contact.html">Contact</a></li>
+                        <li><a class="links" href="./login.html">Login</a></li>
+                        <li><a class="links" href="./register.html">Register</a></li>
+                        <li><a class="links" href="./calculator.html" target="_blank">Calculator</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+
+            
+            <h1><B>Registration Form</B></h1>
+
+        <form>
+        <div class="regForm">
+            
+                <label>Firstname</label>
+                <input type="text" name="fristname" size="20"/> <br><br>
+                <label>Middlename</label>
+                <input type="text" name="Middlename" size="20"/><br> <br>
+                <label>Lastname</label>
+                <input type="text" name="Lastname" size="20"/> <br> <br>
+
+                <label>Gender</label>
+                <select>
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Prefer not to say">Prefer not to say</option>
+                </select>
+                <label>Phone</label>
+                <div class="phoneNum">
+                <input type="text" class="countryCode" name="country code" value="+234" size="2"/>
+                <input type="text" class="numInput" name="Phone" size="10"/></div> <br> <br>
+                 Address
+                 <br>
+                 <textarea cols="=80" rows="5" value =  "Address"></textarea>
+                 <br> <br>
+                 <label>Country </label>
+                 <input type="text" name="Country" size="15"/>
+                 <br> <br>
+                 <label>Province </label>
+                 <input type="text" name="Province" size="15"/>
+                 <br>
+                 <br>
+                 Username:
+                 <input type="Username" id="username" name="Username"/> 
+                 <br>
+                 <br>
+                 Password:
+                 <input type="password" id="Pass" name="Pass"/> 
+                 <br>
+                 <br>
+                 Re-type Password:
+                 <input type="Repass" id="Repass" name="Repass"/> 
+                 <br> <br>
+                 <button>Submit</button>
+                 </div>
+            </form>
+        
+        </body>
+        </html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible"content="ie=edge">
+        <title>CONTACT ME</title>
+        <style>
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+
+body {
+    background-image: url(./image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+
+
+.navLinks ul {
+    display: flex;
+    color: white;
+    list-style: none;
+    margin-top: 10px;
+
+}
+
+
+.links {
+    padding: 0 20px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.links:hover {
+    background-color: white;
+    color: red;
+    border-radius: 20%;
+    transition: 0.5s;
+    padding: 10px 15px;
+}
+
+.myPic {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+
+            input[type=text],select, textarea, input[type=email], button {
+                width: 100%;
+                padding: 15px;
+                border: 1px solid #ccc;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 6px;
+                resize: vertical
+            }
+            button {
+                background-color: #040404;
+                color:aquamarine;
+                /* padding: 12px 20px; */
+                border: none;
+                border-radius: 4px;
+                cursor:pointer;
+                margin-top: 20px;
+            }
+            button:hover {
+                background-color: rebeccapurple;
+                color: #040404;
+            }
+            .container {
+            padding: 50px 25px;
+            background-color: aquamarine;
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 50px;
+            border-radius: 7px 3px;
+        }
+        form {
+            /* border: 3px solid #f1f1f1; */
+            display: flex;
+            flex-direction: column;
+            padding: 0 400px;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 50px;
+        }
+
+        
+        </style>
+    </head>
+    <body>
+
+        <div class="navBar">
+            <div class="navImage">
+                <img src="./my image.jpg" class="myPic" alt="">
+            </div>
+            <div class="navLinks">
+                <ul>
+                    <li><a class="links" href="./index.html">Home</a></li>
+                    <li><a class="links" href="">Contact</a></li>
+                    <li><a class="links" href="./login.html">Login</a></li>
+                    <li><a class="links" href="./register.html">Register</a></li>
+                    <li><a class="links" href="./calculator.html" target="_blank">Calculator</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <h1><b>Contact Form</b></h1>
+        <form action="/action_page.php">
+                <div class="container">
+                <label for="fname"> First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                <br>
+                <br>
+                <label for="lname"> Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                <br>
+                <br>
+                Email:
+                <input type="email" id="email" name="email" placeholder="Enter your email"/> <br> <br>
+                 <br> <br>
+                 <label for="Subject">Message:</label>
+                 <textarea id="Subject" name="Subject" placeholder="Leave a message.." size="10" width="10%"
+                 style="height:200px"></textarea>
+                 <br>
+                 
+                 <label>Priority</label>
+                 <select>
+                     <option value="High Priority">High Priority</option>
+                     <option value="Medium Priority">Medium Priority</option>
+                     <option value="Low Priority">Low Priority</option>
+                    </select>
+                    <button>Submit</button>
+            </div>
+            </form>
+    </body>
